@@ -1,19 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Site das notcias!</title>
     <meta charset="UTF-8">
-    <title>Informação útil</title>
+    <title>Site das notícias!</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>NOTICIAS</h1>
-    <p>Noticias do dia!</p>
+
+    <h1>NOTÍCIAS</h1>
+    <p>Notícias do dia!</p>
+
+    <h2>Previsão do tempo</h2>
+
+    <a class="weatherwidget-io"
+       href="https://forecast7.com/pt/n23d55n46d64/sao-paulo/"
+       data-label_1="SÃO PAULO"
+       data-label_2="Tempo"
+       data-theme="original">
+       SÃO PAULO Tempo
+    </a>
+
+    <script>
+    !function(d,s,id){
+    var js,fjs=d.getElementsByTagName(s)[0];
+    if(!d.getElementById(id)){
+        js=d.createElement(s);js.id=id;
+        js.src='https://weatherwidget.io/js/widget.min.js';
+        fjs.parentNode.insertBefore(js,fjs);
+    }}(document,'script','weatherwidget-io-js');
+    </script>
+
     <h2>Homem salva gato de um buraco!</h2>
-             <ul>
-                   <li>Hoje está manhã um gato ficou preso num buraco profundo por volta de 2 horas e homem desconhecido salva e adota o gato</li>
-                   <li>a bravura do homem deu uma casa e uma chance ao gato</li>
-             </ul>
-     <img src="https://images.unsplash.com/photo-1478098711619-5ab0b478d6e6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Imagem do unsplash">
+    <ul>
+        <li>Hoje de manhã um gato ficou preso num buraco profundo por volta de 2 horas.</li>
+        <li>Um homem desconhecido salvou e adotou o gato.</li>
+    </ul>
+
+    <img src="https://images.unsplash.com/photo-1478098711619-5ab0b478d6e6?q=80&w=1170&auto=format&fit=crop"
+         alt="Imagem do Unsplash">
+
 </body>
 </html>
