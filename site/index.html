@@ -6,29 +6,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <h1>NOTÍCIAS</h1>
-    <p>Notícias do dia!</p>
-
     <h2>Previsão do tempo</h2>
 
-    <a class="weatherwidget-io"
-       href="https://forecast7.com/pt/n23d55n46d64/sao-paulo/"
-       data-label_1="SÃO PAULO"
-       data-label_2="Tempo"
-       data-theme="original">
-       SÃO PAULO Tempo
-    </a>
+<iframe 
+  src="https://www.meteoblue.com/pt/tempo/widget/daily/brasil_brasil_10345166?geoloc=fixed&days=4&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&precipunit=MILLIMETER&coloured=monochrome&pictoicon=1&maxtemperature=1&mintemperature=1&windspeed=1&windgust=0&winddirection=1&uv=0&humidity=0&precipitation=1&precipitationprobability=1&spot=1&pressure=0&layout=light&user_key=42c2f7d17bd13fe0&embed_key=55ba8ab256b1f05c&sig=1fea2b487aaee4e6194f88704027f85b0db0c3578bddb14959200c05a063d925"
+  frameborder="0"
+  scrolling="NO"
+  allowtransparency="true"
+  sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox"
+  style="width: 216px;height: 348px;border: 0;overflow: hidden;">
+</iframe>
 
-    <script>
-    !function(d,s,id){
-    var js,fjs=d.getElementsByTagName(s)[0];
-    if(!d.getElementById(id)){
-        js=d.createElement(s);js.id=id;
-        js.src='https://weatherwidget.io/js/widget.min.js';
-        fjs.parentNode.insertBefore(js,fjs);
-    }}(document,'script','weatherwidget-io-js');
-    </script>
+<div>
+  <!-- DO NOT REMOVE THIS LINK -->
+  <a href="https://www.meteoblue.com/pt/tempo/semana/index"
+     target="_blank"
+     rel="noopener">
+     meteoblue
+  </a>
+</div>
 
     <h2>Homem salva gato de um buraco!</h2>
     <ul>
